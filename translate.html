@@ -30,6 +30,9 @@
 	.nav a:hover{
 		background-color: #B02828;
 	}
+	.indicate{
+		background-color: #B02828;
+	}
 	.page{
 		position: relative;
 	}
@@ -91,12 +94,21 @@
 		}
 		one.onclick = function(){
 			inter.style.marginTop = -0*wholeH + 'px';
+			one.className = 'indicate';
+			three.className = '';
+			two.className = '';
 		};
 		two.onclick = function(){
 			inter.style.marginTop = -1*wholeH + 'px';
+			two.className = 'indicate';
+			one.className = '';
+			three.className = '';
 		};
 		three.onclick = function(){
 			inter.style.marginTop = -2*wholeH + 'px';
+			three.className = 'indicate';
+			one.className = '';
+			two.className = '';
 		};
 	</script>
 </body>
